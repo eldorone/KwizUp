@@ -13,6 +13,9 @@
 		49C9B0EE28FC247F00E60DDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C9B0EC28FC247F00E60DDE /* Main.storyboard */; };
 		49C9B0F028FC248000E60DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C9B0EF28FC248000E60DDE /* Assets.xcassets */; };
 		49C9B0F328FC248000E60DDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C9B0F128FC248000E60DDE /* LaunchScreen.storyboard */; };
+		49C9B0FB28FC255C00E60DDE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 49C9B0FA28FC255C00E60DDE /* README.md */; };
+		49C9B10028FC262D00E60DDE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C9B0FF28FC262D00E60DDE /* Question.swift */; };
+		49C9B10228FC263F00E60DDE /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C9B10128FC263F00E60DDE /* QuizBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		49C9B0EF28FC248000E60DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49C9B0F228FC248000E60DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49C9B0F428FC248000E60DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49C9B0FA28FC255C00E60DDE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../Study/Lesson/Quizzler/README.md; sourceTree = "<group>"; };
+		49C9B0FF28FC262D00E60DDE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		49C9B10128FC263F00E60DDE /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 		49C9B0DA28FC247F00E60DDE = {
 			isa = PBXGroup;
 			children = (
+				49C9B0FA28FC255C00E60DDE /* README.md */,
 				49C9B0E528FC247F00E60DDE /* KwizUp */,
 				49C9B0E428FC247F00E60DDE /* Products */,
 			);
@@ -58,13 +65,39 @@
 			children = (
 				49C9B0E628FC247F00E60DDE /* AppDelegate.swift */,
 				49C9B0E828FC247F00E60DDE /* SceneDelegate.swift */,
-				49C9B0EA28FC247F00E60DDE /* ViewController.swift */,
-				49C9B0EC28FC247F00E60DDE /* Main.storyboard */,
+				49C9B0FE28FC25E100E60DDE /* Model */,
+				49C9B0FD28FC25D600E60DDE /* View */,
+				49C9B0FC28FC25C100E60DDE /* Controller */,
 				49C9B0EF28FC248000E60DDE /* Assets.xcassets */,
 				49C9B0F128FC248000E60DDE /* LaunchScreen.storyboard */,
 				49C9B0F428FC248000E60DDE /* Info.plist */,
 			);
 			path = KwizUp;
+			sourceTree = "<group>";
+		};
+		49C9B0FC28FC25C100E60DDE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49C9B0EA28FC247F00E60DDE /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		49C9B0FD28FC25D600E60DDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49C9B0EC28FC247F00E60DDE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49C9B0FE28FC25E100E60DDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49C9B0FF28FC262D00E60DDE /* Question.swift */,
+				49C9B10128FC263F00E60DDE /* QuizBrain.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +160,7 @@
 			files = (
 				49C9B0F328FC248000E60DDE /* LaunchScreen.storyboard in Resources */,
 				49C9B0F028FC248000E60DDE /* Assets.xcassets in Resources */,
+				49C9B0FB28FC255C00E60DDE /* README.md in Resources */,
 				49C9B0EE28FC247F00E60DDE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C9B10228FC263F00E60DDE /* QuizBrain.swift in Sources */,
 				49C9B0EB28FC247F00E60DDE /* ViewController.swift in Sources */,
+				49C9B10028FC262D00E60DDE /* Question.swift in Sources */,
 				49C9B0E728FC247F00E60DDE /* AppDelegate.swift in Sources */,
 				49C9B0E928FC247F00E60DDE /* SceneDelegate.swift in Sources */,
 			);
